@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ThreeJS/static/css/main.c326e9b2.css",
+    "main.js": "/ThreeJS/static/js/main.b98e16f2.js",
+    "index.html": "/ThreeJS/index.html",
+    "main.c326e9b2.css.map": "/ThreeJS/static/css/main.c326e9b2.css.map",
+    "main.b98e16f2.js.map": "/ThreeJS/static/js/main.b98e16f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c326e9b2.css",
+    "static/js/main.b98e16f2.js"
+  ]
+}
