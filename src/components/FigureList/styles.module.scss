@@ -1,0 +1,14 @@
+.list {
+  &__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    // background-color: rgb(0, 255, 8);
+    max-width: 20vw;
+    max-height: 10vh;
+    padding: 1rem;
+
+    overflow-y: scroll;
+  }
+}

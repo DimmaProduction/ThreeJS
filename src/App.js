@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { FigureList } from './components/FigureList/FigureList';
+import { Header } from './components/Header/Header';
+import Scene from './components/Scene/Scene';
+import './styles/globals.scss';
 
 function App() {
+  const [figures, setFigures] = useState([]);
+
+  const handleAddFigure = (figure, scale) => {
+    const newFigure = {
+      'id': figures.length + Date.now(),
+      'figure': figure,
+      'scale': scale
+    };
+
+    setFigures(prev => [...prev, newFigure])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onAddFigure={handleAddFigure}/>
+
+      <Scene />
+
+      <FigureList figures={figures} />
     </div>
   );
 }

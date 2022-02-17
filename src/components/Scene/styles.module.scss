@@ -1,0 +1,14 @@
+.scene {
+  &__wrapper {
+    border: 2px solid black;
+    border-radius: 2rem;
+
+    width: 80vw;
+    height: 80vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: rgba(#004cff, 0.1);
+  }
+}
